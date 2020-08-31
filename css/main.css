@@ -1,0 +1,614 @@
+/* ------ Set fonts ------ */
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-weight: 100;
+  src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-weight: 300;
+  src: url('../fonts/museosanscyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  font-weight: 900;
+  src: url('../fonts/museosanscyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ------ Specification ------ */
+
+body {
+	font: 300 15px 'Museo Sans', sans-serif;
+	background-color: #fff;
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, a, span, ul, li {
+	box-sizing: border-box;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	margin: 0;
+	letter-spacing: 0.120em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+    padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.120em;
+}
+
+h1, h2, h3 {
+	font-family: 'Natasha', sans-serif;
+}
+
+h1 {
+	font-size: 49px;
+}
+
+h2 {
+	font-size: 37px;
+}
+
+h3 {
+	font-size: 22px;
+	color: #858782;
+}
+
+h4 {
+	font-weight: 900;
+	font-size: 15px;
+}
+
+h5 {
+	font-weight: 100;
+	font-size: 12px;
+}
+
+a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.120em;
+	transition: all 0.5s ease;
+}
+
+a:hover {
+	border-bottom-color: transparent;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-around {
+	justify-content: space-around;
+}
+
+.justify-content-end {
+	justify-content: flex-end;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+/* ---- First screen ---- */
+
+.header {
+	padding: 55px 0 80px;
+	background: #f0f7f7 url(../img/main-bg.png) no-repeat center top / cover;
+	color: #fff;
+}
+
+.navigation {
+	text-transform: uppercase;
+}
+
+.logo {
+	font-size: 17px;
+}
+
+.logo span {
+	font-weight: 900;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 43px;
+}
+
+.menu__link {
+	font-weight: 900;
+	font-size: 15px;
+	padding: 7px 7px;
+}
+
+.menu__link:hover {
+	background-color: #fff;
+	border-radius: 5px;
+	color: #000;
+}
+
+.e-mail {
+	text-transform: none;
+	border-bottom: 1px solid #fff;
+	border-color: rgba(255,255,255,0.35);
+}
+
+.offer {
+	margin-top: 288px;
+	margin-bottom: 256px;
+	text-align: center;
+}
+
+.offer__title {
+	margin-bottom: 20px
+}
+
+.offer__subtitle {
+	font-size: 29px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.scroll-down {
+	display: block;
+	width: 41px;
+	height: 41px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	font-family: 'Arial';
+	font-size: 18px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	/* fit arrow in center of circle */
+	line-height: 37px;
+	letter-spacing: 0.00em;
+}
+
+.scroll-down:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+/* ------ Section "Обо мне" ------ */
+
+.about-me {
+	padding: 84px 0 79px;
+}
+
+.wrapper {
+	margin-top: 73px;
+}
+
+.exp {
+	width: 47%;
+}
+
+.charts {
+	width: 50%;
+}
+
+.exp__title {
+	margin-bottom: 38px;
+}
+
+.exp__text {
+	letter-spacing: 0.02em;
+	line-height: 1.75em;
+}
+
+.exp__text:not(:last-child) {
+	margin-bottom: 2.1em;
+}
+
+.merit {
+	margin-bottom: 67px;
+}
+
+.merit__title {
+	margin-bottom: 58px;
+}
+
+.merit__item {
+	width: 114px;
+	text-align: center;
+}
+
+.merit__digit {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	width: 74px;
+	height: 74px;
+	margin: 0 auto;
+	position: relative;
+	color: #789073;
+	line-height: 74px;
+	font-size: 20px;
+	border: 2px solid #789073;
+}
+
+.merit__digit:after {
+	content:'';
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	border: 1px solid #c3e5a2;
+	left: 6px;
+    top: 6px;
+}
+
+/* Rotate text back */
+
+.merit__digit span {
+	display: inline-block;
+	content: "";
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+}
+
+.merit__subtitle {
+	margin-top: 38px;
+	line-height: 1.4em;
+	letter-spacing: 0.02em;
+}
+
+.connect__title {
+	margin-bottom: 31px;
+}
+
+.contact__item:not(:last-child) {
+	margin-bottom: 17px;
+}
+
+.contact__link {
+	font-size: 14px;
+	color: #204d15;
+	border-bottom: 1px solid rgba(32,77,21,0.29);
+}
+
+.ask span {
+	width: 64px;
+    height: 64px;
+	font-size: 25px;
+	color: #204d15;
+	line-height: 64px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(32,77,21,0.08);
+    margin-right: 15px;
+}
+
+.ask__text {
+	font-size: 14px;
+	color: rgba(0,0,0,0.72);
+	letter-spacing: 0.02em;
+}
+
+/* ------ Section "Навыки" ------ */
+
+.skill {
+	padding: 10px 0 10px;
+}
+
+.ability {
+	margin-top: 58px;
+}
+
+.ability__item {
+	width: 232px;
+}
+
+.ability__digit {
+	width: 61px;
+    height: 61px;
+    position: relative;
+	font-size: 13px;
+	color: #204d15;
+	line-height: 61px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #859b7f;
+    margin-right: 30px;
+}
+
+.ability__digit:after {
+	content:'';
+	position: absolute;
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	border: 1px solid #859b7f;
+	left: 4px;
+    top: 4px;
+}
+
+/* ------ Section "Работы" ------ */
+
+.portfolio {
+	padding: 70px 0 80px;
+}
+
+.gallery {
+	margin-top: 57px;
+}
+
+.gallery__item {
+	position: relative;
+	transition: all 0.5s ease;
+}
+
+.gallery__overlay {
+	background: rgba(0,0,0,0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__item:hover .gallery__overlay  {
+	opacity: 1;
+}
+
+.gallery__img {
+	display: block;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.gallery__title {
+	margin-bottom: 12px;
+}
+
+.gallery__link {
+	padding-bottom: 3px;
+	border-bottom: 1px solid rgba(255,255,255,0.46);
+}
+
+/* ----- Footer ---- */
+
+.footer {
+	padding: 41px 0 108px;
+}
+
+.copyright {
+	font-size: 11px;
+	letter-spacing: 0.140em;
+	text-transform: uppercase;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	h2, h3 {
+		text-align: center;
+	}
+	
+	.menu {
+		display: none;
+	}
+
+	.container {
+		width: 700px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.exp {
+		margin-bottom: 67px;
+	}
+
+	.exp, .charts {
+		width: auto;
+	}
+
+	.invite {
+		justify-content: space-around;
+	}
+
+	.contact, .ask {
+		width: auto;
+	}
+
+	.ability {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.ability__item {
+		width: 40%;
+		margin-bottom: 30px;
+	}
+
+	.gallery__item {
+	    width: 32%;
+	}
+
+	.copyright {
+		text-align: center;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}
+
+	.offer {
+		margin-top: 140px;
+	}
+
+	.exp {
+		margin-bottom: 65px;
+	}
+
+	.merit__subtitle {
+		font-size: 12px;
+	}
+
+	.portfolio {
+    	padding: 20px 0 40px;
+	}
+
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gallery__item {
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 27px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.container {
+		width: 90%;
+	}
+	
+	.offer {
+		margin: 80px 0;
+	}
+
+	.offer__subtitle {
+		font-size: 19px;
+	}
+
+	.about-me {
+		padding: 50px 0;
+	}
+
+	.wrapper {
+    	margin-top: 50px;
+	}
+
+	.merit__list {
+		flex-wrap: wrap;
+	}
+
+	.merit__item {
+		width: 35%;
+	}
+
+	.merit__item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+
+	.merit__subtitle {
+		width: 115px;
+		margin: 38px auto 0;
+	}
+
+	.invite {
+		flex-direction: column;
+	}
+
+	.contact {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.ability {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.ability__item {
+		width: 212px;
+	}
+
+	.footer {
+    	padding:35px 0;
+    }
+}
